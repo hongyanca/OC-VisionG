@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>DisplayProductName</key>
+  <string>BenQ EW3270U - forced RGB mode (EDID override)</string>
+  <key>IODisplayEDID</key>
+  <data>AP///////wAJ0VB5RVQAABYdAQS1Rid4J1mVr09CryYPUFSla4DRwLMAqcCB
+gIEAgcABAQEBTdAAoPBwPoAwIDUAuokhAAAaAAAA/wBZNUswMTczMjAxOQog
+AAAA/QAoPIeHPAEKICAgICAgAAAA/ABCZW5RIEVXMzI3MFUKAOE=
+</data>
+  <key>DisplayVendorID</key>
+  <integer>2513</integer>
+  <key>DisplayProductID</key>
+  <integer>31056</integer>
+</dict>
+</plist>
