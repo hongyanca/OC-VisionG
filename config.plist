@@ -719,7 +719,7 @@
 			<key>BlacklistAppleUpdate</key>
 			<true/>
 			<key>BootProtect</key>
-			<string>None</string>
+			<string>Bootstrap</string>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
@@ -775,10 +775,10 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v shikigva=80 agdpmod=pikera</string>
+				<string>shikigva=80 agdpmod=pikera keepsyms=1</string>
 				<key>csr-active-config</key>
 				<data>
-				AAAAAA==
+				5wMAAA==
 				</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
