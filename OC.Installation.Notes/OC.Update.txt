@@ -1,0 +1,17 @@
+OpenCore Update:
+
+Replace the following files:
+/EFI/BOOT/BOOTx64.efi
+/EFI/OC/OpenCore.efi
+/EFI/OC/Bootstrap/Bootstrap.efi
+/EFI/OC/Drivers/OpenCanopy.efi
+/EFI/OC/Drivers/OpenRuntime.efi
+/EFI/OC/Resources/*
+/EFI/OC/Tools/CleanNvram.efi
+/EFI/OC/Tools/OpenShell.efi
+/EFI/OC/Tools/VerifyMsrE2.efi
+/EFI/OC/Kexts/AppleALC.kext
+/EFI/OC/Kexts/Lilu.kext
+/EFI/OC/Kexts/SMC*.kext
+/EFI/OC/Kexts/VirtualSMC.kext
+/EFI/OC/Kexts/WhateverGreen.kext
