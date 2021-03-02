@@ -1098,7 +1098,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>4105</integer>
 			<key>ROM</key>
 			<data>
 			</data>
