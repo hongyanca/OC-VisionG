@@ -3,7 +3,6 @@ OpenCore Update:
 Replace the following files:
 /EFI/BOOT/BOOTx64.efi
 /EFI/OC/OpenCore.efi
-/EFI/OC/Bootstrap/Bootstrap.efi
 /EFI/OC/Drivers/OpenCanopy.efi
 /EFI/OC/Drivers/OpenRuntime.efi
 /EFI/OC/Resources/*
