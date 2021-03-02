@@ -1083,18 +1083,18 @@
 			<key>StartupPowerEvents</key>
 			<integer>0</integer>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C49ZGJV3Q</string>
+			<string>C02DT0JM046M</string>
 			<key>SystemUUID</key>
-			<string>CC9F1FD8-711E-4710-B6BD-B8167808D1AA</string>
+			<string>7DC0C999-5769-4D0A-A23F-4DD296AE9BA9</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02003310QXLNV9UE</string>
+			<string>C02050102GU0000A8</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1107,11 +1107,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C49ZGJV3Q</string>
+			<string>C02DT0JM046M</string>
 			<key>SystemUUID</key>
-			<string>CC9F1FD8-711E-4710-B6BD-B8167808D1AA</string>
+			<string>7DC0C999-5769-4D0A-A23F-4DD296AE9BA9</string>
 		</dict>
 		<key>Memory</key>
 		<dict>
@@ -1218,15 +1218,15 @@
 			f//f/wAAAAA=
 			</data>
 			<key>MLB</key>
-			<string>C02003310QXLNV9UE</string>
+			<string>C02050102GU0000A8</string>
 			<key>ROM</key>
 			<data>
 			ESIzRFVm
 			</data>
 			<key>SystemSerialNumber</key>
-			<string>C02C49ZGJV3Q</string>
+			<string>C02DT0JM046M</string>
 			<key>SystemUUID</key>
-			<string>CC9F1FD8-711E-4710-B6BD-B8167808D1AA</string>
+			<string>7DC0C999-5769-4D0A-A23F-4DD296AE9BA9</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -1245,11 +1245,11 @@
 			<key>BoardProduct</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>BoardSerialNumber</key>
-			<string>M0000000000000001</string>
+			<string>C02050102GU0000A8</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>iMac19,1</string>
+			<string>iMac20,2</string>
 			<key>ChassisAssetTag</key>
 			<string></string>
 			<key>ChassisManufacturer</key>
@@ -1281,13 +1281,13 @@
 			<key>SystemManufacturer</key>
 			<string>Acidanthera</string>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>iMac20,2</string>
 			<key>SystemSKUNumber</key>
 			<string></string>
 			<key>SystemSerialNumber</key>
-			<string>C02C49ZGJV3Q</string>
+			<string>C02DT0JM046M</string>
 			<key>SystemUUID</key>
-			<string>CC9F1FD8-711E-4710-B6BD-B8167808D1AA</string>
+			<string>7DC0C999-5769-4D0A-A23F-4DD296AE9BA9</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
