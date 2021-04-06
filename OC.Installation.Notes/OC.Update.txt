@@ -8,7 +8,7 @@ Replace the following files:
 /EFI/OC/Resources/*
 /EFI/OC/Tools/CleanNvram.efi
 /EFI/OC/Tools/OpenShell.efi
-/EFI/OC/Tools/VerifyMsrE2.efi
+/EFI/OC/Tools/ControlMsrE2.efi
 /EFI/OC/Kexts/AppleALC.kext
 /EFI/OC/Kexts/Lilu.kext
 /EFI/OC/Kexts/SMC*.kext
