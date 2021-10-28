@@ -8,7 +8,7 @@ macOS Big Sur 11.6.1
 
 ## Bootloader
 
-**[Opencore](https://github.com/acidanthera/OpenCorePkg) 0.7.4**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.7.4**
 
 ## Working
 
@@ -16,22 +16,49 @@ macOS Big Sur 11.6.1
 
 - **Ethernet**: Intel I225-V 2.5Gb
 
-  1. Add device property:
+  - Add device property:
 
-     ```
-     <key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
-     <dict>
-     	<key>device-id</key>
-     		<data>
-     		8hWGgA==
-     		</data>
-     </dict>
-     
-     ```
+  ```
+  <key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
+  <dict>
+  	<key>device-id</key>
+  		<data>
+  		8hWGgA==
+  		</data>
+  </dict>
+  
+  ```
 
 - Native NVRAM
+
 - Sleep/Wake
+
 - Reboot/Shutdown
+
+## BIOS Setting
+
+- Disable
+
+  - CSM Support
+  - Secure Boot
+  - Re-Size BAR Support
+  - Settings -> Super IO Configuration -> Serial Port: Disabled
+
+- Enable
+
+  - VT-x
+
+  - VT-d
+
+  - Above 4G Decoding
+
+  - Internal Graphics
+
+  - DVMT Pre-Allocated: 64M
+
+  - Hyper-Threading
+
+    
 
 ## Credits
 
