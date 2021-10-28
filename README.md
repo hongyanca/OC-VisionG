@@ -16,6 +16,8 @@ macOS Big Sur 11.6.1
 
 - **Ethernet**: Intel I225-V 2.5Gb
 
+  - Add **dk.e1000=0** to boot-args, mentioned [here](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#nvram)
+
   - Add device property:
 
   ```
@@ -26,7 +28,6 @@ macOS Big Sur 11.6.1
   		8hWGgA==
   		</data>
   </dict>
-  
   ```
 
 - Native NVRAM
@@ -48,7 +49,7 @@ macOS Big Sur 11.6.1
 
   - VT-x
 
-  - VT-d
+  - VT-d (Enable **DisableIoMapper** in config.plist)
 
   - Above 4G Decoding
 
