@@ -49,7 +49,10 @@ macOS Big Sur 11.6.1
 
   - **Note that the subvendor ID will be reverted back if you cut off the power supply. So prepare a permanent Ubuntu flash drive.**
 
-- Add device property:
+- Bluetooth: IOGEAR Bluetooth Dongle
+
+  - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
+  - Load 3 kexts in config.plist in the following order: BcrmFirmwareData should be first, BcrmPatchRAM3 second and finally BlueToolFixup third.
 
 - Native NVRAM
 
@@ -89,6 +92,9 @@ macOS Big Sur 11.6.1
 - [Dortania](https://github.com/dortania) : Opencore guide
 - https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D
 - https://www.tonymacx86.com/threads/ohchangs-build-gigabyte-z590-vision-g-i7-10700k-amd-rx580.310986/page-18#post-2283363: Intel I225-V Ethernet Adapter
+- https://dortania.github.io/OpenCore-Install-Guide/extras/monterey.html#bluetooth: Bluetooth
+- https://github.com/acidanthera/BrcmPatchRAM: Bluetooth
+- https://www.reddit.com/r/hackintosh/comments/qgshzj/bluetooth_on_macos_monterey_1201/: IOGEAR Bluetooth dongle
 - https://dortania.github.io/OpenCore-Install-Guide/ktext.html#ethernet: Vendor Id of Intel 82574L
 - https://github.com/BrushXue/EP2C602-4LD16-E5-2667v2-Hackintosh: Intel 82574L Ethernet Adapter
 - https://www.tonymacx86.com/threads/guide-asrock-rack-ep2c602.289060/: Intel 82574 Ethernet Adapter
