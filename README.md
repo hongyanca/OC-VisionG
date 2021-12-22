@@ -30,6 +30,27 @@ macOS Big Sur 11.6.1
   </dict>
   ```
 
+- **Ethernet**: Intel 82574L 1Gb
+
+  - This NIC is natively supported. However the different subvendor ID prevents the system from loading the driver. So you need to use Linux to flash the EEPROM. Boot into Live Ubuntu. Use ```ip a``` to find out the Ethernet Adapter. In my case, it's ```enp8s0```. Then run the following command:
+
+    ```
+    sudo apt install ethtool
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x16 value 0x00
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x17 value 0x00
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x1A value 0xF6
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x16 value 0x00
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x17 value 0x00
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x18 value 0x86
+    sudo ethtool -E enp8s0 magic 0x10D38086 offset 0x19 value 0x80
+    ```
+
+    Reboot the PC.
+
+  - **Note that the subvendor ID will be reverted back if you cut off the power supply. So prepare a permanent Ubuntu flash drive.**
+
+- Add device property:
+
 - Native NVRAM
 
 - Sleep/Wake
@@ -68,3 +89,6 @@ macOS Big Sur 11.6.1
 - [Dortania](https://github.com/dortania) : Opencore guide
 - https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D
 - https://www.tonymacx86.com/threads/ohchangs-build-gigabyte-z590-vision-g-i7-10700k-amd-rx580.310986/page-18#post-2283363: Intel I225-V Ethernet Adapter
+- https://dortania.github.io/OpenCore-Install-Guide/ktext.html#ethernet: Vendor Id of Intel 82574L
+- https://github.com/BrushXue/EP2C602-4LD16-E5-2667v2-Hackintosh: Intel 82574L Ethernet Adapter
+- https://www.tonymacx86.com/threads/guide-asrock-rack-ep2c602.289060/: Intel 82574 Ethernet Adapter
