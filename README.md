@@ -6,7 +6,7 @@ Tested working version: macOS Big Sur 11.6.5
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.7.9**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.0**
 
 ## Working
 
