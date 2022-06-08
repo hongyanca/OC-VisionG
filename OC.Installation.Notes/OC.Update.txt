@@ -5,6 +5,8 @@ Replace the following files:
 /EFI/OC/OpenCore.efi
 /EFI/OC/Drivers/OpenCanopy.efi
 /EFI/OC/Drivers/OpenRuntime.efi
+/EFI/OC/Drivers/ToggleSipEntry.efi
+/EFI/OC/Drivers/ResetNvramEntry.efi
 /EFI/OC/Resources/*
 /EFI/OC/Tools/CleanNvram.efi
 /EFI/OC/Tools/OpenShell.efi
@@ -15,3 +17,6 @@ Replace the following files:
 /EFI/OC/Kexts/SMCSuperIO.kext
 /EFI/OC/Kexts/VirtualSMC.kext
 /EFI/OC/Kexts/WhateverGreen.kext
+/EFI/OC/Kexts/BlueToolFixup.kext
+/EFI/OC/Kexts/BrcmFirmwareData.kext
+/EFI/OC/Kexts/BrcmPatchRAM3.kext
