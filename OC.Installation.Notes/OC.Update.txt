@@ -5,6 +5,7 @@ Replace the following files:
 /EFI/OC/OpenCore.efi
 /EFI/OC/Drivers/OpenCanopy.efi
 /EFI/OC/Drivers/OpenRuntime.efi
+/EFI/OC/Drivers/OpenVariableRuntimeDxe.efi
 /EFI/OC/Drivers/ToggleSipEntry.efi
 /EFI/OC/Drivers/ResetNvramEntry.efi
 /EFI/OC/Resources/*
