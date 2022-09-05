@@ -6,7 +6,7 @@ Tested working version: macOS Big Sur 11.6.8
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.3**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.4**
 
 ## Working
 
@@ -197,7 +197,6 @@ Tested working version: macOS Big Sur 11.6.8
 - [Acidanthera](https://github.com/acidanthera) : OpencorePkg, kexts, tools etc.
 - [Dortania](https://github.com/dortania) : Opencore guide
 - https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D
-- https://www.tonymacx86.com/threads/ohchangs-build-gigabyte-z590-vision-g-i7-10700k-amd-rx580.310986/page-18#post-2283363: Intel I225-V Ethernet Adapter (Not working on macOS 12.1)
 - https://dortania.github.io/OpenCore-Install-Guide/extras/monterey.html#bluetooth: Bluetooth
 - https://github.com/acidanthera/BrcmPatchRAM: Bluetooth
 - https://www.reddit.com/r/hackintosh/comments/qgshzj/bluetooth_on_macos_monterey_1201/: IOGEAR Bluetooth dongle
