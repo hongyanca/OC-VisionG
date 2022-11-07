@@ -2,11 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Big Sur 11.7
+Tested working version: macOS Big Sur 11.7.1
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.5**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.6**
 
 ## Working
 
