@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Big Sur 11.7.1
+Tested working version: macOS Big Sur 11.7.1, macOS Ventura 13.0.1
 
 ## Bootloader
 
@@ -136,7 +136,12 @@ Tested working version: macOS Big Sur 11.7.1
     ```
 
     Reboot the PC.
+    
+    Install [dortania/OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Ethernet)
 
+- **Ethernet**: Intel I225-V
+  Flash a custom firmware: https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md
+  
 - Bluetooth: IOGEAR Bluetooth Dongle
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
@@ -147,24 +152,6 @@ Tested working version: macOS Big Sur 11.7.1
 - Sleep/Wake
 
 - Reboot/Shutdown
-
-## Not Working
-
-- **Ethernet**: Intel I225-V 2.5GbE
-
-  - Add **dk.e1000=0** to boot-args, mentioned [here](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#nvram)
-
-  - Add device property:
-
-  ```
-  <key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
-  <dict>
-    <key>device-id</key>
-      <data>
-      8hWGgA==
-      </data>
-  </dict>
-  ```
 
 ## BIOS Setting
 
@@ -179,7 +166,7 @@ Tested working version: macOS Big Sur 11.7.1
 
   - VT-x
 
-  - VT-d (Enable **DisableIoMapper** in config.plist)
+  - VT-d (**DisableIoMapper** OFF in config.plist Kernel/Quirks)
 
   - Above 4G Decoding
 
@@ -204,6 +191,7 @@ Tested working version: macOS Big Sur 11.7.1
 - https://github.com/BrushXue/EP2C602-4LD16-E5-2667v2-Hackintosh: Intel 82574L Ethernet Adapter
 - https://www.tonymacx86.com/threads/guide-asrock-rack-ep2c602.289060/: Intel 82574 Ethernet Adapter
 - https://www.tonymacx86.com/threads/guide-replace-non-working-intel-i225-with-82574l-pcie-nic-monterey-opencore.319056/: Replace non-working Intel I225 with 82574L PCIe NIC (Monterey + OpenCore)
+- https://www.tonymacx86.com/threads/solved-intel-82574l-nic-make-it-work-again.322802/: Intel 82574L PCIe NIC on Ventura
 - https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-79#post-2313032: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
 - https://github.com/osx86-ijb/amdradeonrx5700xt-macos-fix-spoof: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DevicePropertie
 - https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore: I225-V Fix
