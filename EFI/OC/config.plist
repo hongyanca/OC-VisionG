@@ -10,7 +10,7 @@
 				<key>Comment</key>
 				<string>DMAR replacement table for 3rd Party WiFi/Ethernet</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>DMAR.aml</string>
 			</dict>
@@ -318,7 +318,7 @@
 			<dict>
 				<key>device-id</key>
 				<data>
-				9hCGgA==
+				9hAAAA==
 				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
@@ -469,7 +469,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Intel82574L</string>
 				<key>MaxKernel</key>

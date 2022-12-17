@@ -2,11 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Big Sur 11.7.1, macOS Ventura 13.0.1
+Tested working version: macOS Big Sur 11.7.1, macOS Ventura 13.1
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.6**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.7**
 
 ## Working
 
@@ -29,11 +29,23 @@ Tested working version: macOS Big Sur 11.7.1, macOS Ventura 13.0.1
 
     Reboot the PC.
     
-    Install [dortania/OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Ethernet)
+    ~~Install [dortania/OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Ethernet)~~
+    
+    ```
+    ACPI->Add->0 DMAR.aml Enabled: YES
+    ACPI->Delete->0 Drop OEM DMAR Table: NO
+    DeviceProperties->Add->PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)->device-id F6100000
+    Kernel->Quirks->DisableIoMapper: NO
+    ```
 
 - **Ethernet**: Intel I225-V
   Flash a custom firmware: https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md
+  Conditions for Intel I225-V and 3rd party WiFi/LAN cards to work: https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225_stock_vs_cstmfw.md
   
+- | macOS        | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
+  | ------------ | ------ | --------------- | ---------- | ----------------------- | --------------------------- |
+  | 11.4 to 13.0 | **ON** | **OFF**         | **YES**    | **NO / NO**             | **YES / YES**               |
+
 - Bluetooth: IOGEAR Bluetooth Dongle
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
