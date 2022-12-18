@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Big Sur 11.7.1, macOS Ventura 13.1
+Tested working version: macOS Ventura 13.1
 
 ## Bootloader
 
@@ -29,22 +29,131 @@ Tested working version: macOS Big Sur 11.7.1, macOS Ventura 13.1
 
     Reboot the PC.
     
-    ~~Install [dortania/OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Ethernet)~~
-    
     ```
     ACPI->Add->0 DMAR.aml Enabled: YES
     ACPI->Delete->0 Drop OEM DMAR Table: NO
     DeviceProperties->Add->PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)->device-id F6100000
     Kernel->Quirks->DisableIoMapper: NO
     ```
+    
+    ~~Install [dortania/OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Ethernet)~~
 
-- **Ethernet**: Intel I225-V
-  Flash a custom firmware: https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md
-  Conditions for Intel I225-V and 3rd party WiFi/LAN cards to work: https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225_stock_vs_cstmfw.md
+- **Ethernet**: Intel I225-V <br>
+  Flash a custom firmware: <br>https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md <br>Conditions for Intel I225-V and 3rd party WiFi/LAN cards to work: <br>https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225_stock_vs_cstmfw.md <br>
   
-- | macOS        | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
+  | macOS        | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
   | ------------ | ------ | --------------- | ---------- | ----------------------- | --------------------------- |
   | 11.4 to 13.0 | **ON** | **OFF**         | **YES**    | **NO / NO**             | **YES / YES**               |
+  
+- **Graphics**: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
+
+  ```
+  <key>DeviceProperties</key>
+  	<dict>
+  		<key>Add</key>
+  		<dict>
+  			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+  			<dict>
+  				<key>@0,name</key>
+  				<string>ATY,Adder</string>
+  				<key>@1,name</key>
+  				<string>ATY,Adder</string>
+  				<key>@2,name</key>
+  				<string>ATY,Adder</string>
+  				<key>@3,name</key>
+  				<string>ATY,Adder</string>
+  				<key>AAPL00,DualLink</key>
+  				<data>
+  				AQAAAA==
+  				</data>
+  				<key>ATY,Card#</key>
+  				<string>102-D32200-00</string>
+  				<key>ATY,Copyright</key>
+  				<string>Copyright AMD Inc. All Rights Reserved. 2005-2019</string>
+  				<key>ATY,DeviceName</key>
+  				<string>W5700X</string>
+  				<key>ATY,EFIVersion</key>
+  				<string>01.01.190</string>
+  				<key>ATY,FamilyName</key>
+  				<string>Radeon Pro</string>
+  				<key>ATY,Rom#</key>
+  				<string>113-D3220E-190</string>
+  				<key>CAIL_EnableLBPWSupport</key>
+  				<integer>0</integer>
+  				<key>CAIL_EnableMaxPlayloadSizeSync</key>
+  				<integer>1</integer>
+  				<key>CFG_CAA</key>
+  				<integer>0</integer>
+  				<key>CFG_FB_LIMIT</key>
+  				<integer>0</integer>
+  				<key>CFG_FORCE_MAX_DPS</key>
+  				<integer>1</integer>
+  				<key>CFG_GEN_FLAGS</key>
+  				<integer>0</integer>
+  				<key>CFG_NO_MST</key>
+  				<integer>0</integer>
+  				<key>CFG_NVV</key>
+  				<integer>2</integer>
+  				<key>CFG_PAA</key>
+  				<integer>0</integer>
+  				<key>CFG_PULSE_INT</key>
+  				<integer>1</integer>
+  				<key>CFG_TPS1S</key>
+  				<integer>1</integer>
+  				<key>CFG_TRANS_WSRV</key>
+  				<integer>1</integer>
+  				<key>CFG_UFL_CHK</key>
+  				<integer>0</integer>
+  				<key>CFG_UFL_STP</key>
+  				<integer>0</integer>
+  				<key>CFG_USE_AGDC</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_CP2</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_CPSTATUS</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_DPT</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_FBC</key>
+  				<integer>0</integer>
+  				<key>CFG_USE_FBWRKLP</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_FEDS</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_LPT</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_PSR</key>
+  				<integer>0</integer>
+  				<key>CFG_USE_SCANOUT</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_SRRB</key>
+  				<integer>0</integer>
+  				<key>CFG_USE_STUTTER</key>
+  				<integer>1</integer>
+  				<key>CFG_USE_TCON</key>
+  				<integer>1</integer>
+  				<key>PP_DisableDIDT</key>
+  				<integer>1</integer>
+  				<key>PP_DisablePowerContainment</key>
+  				<integer>1</integer>
+  				<key>PP_DisableVoltageIsland</key>
+  				<integer>0</integer>
+  				<key>PP_FuzzyFanControl</key>
+  				<integer>1</integer>
+  				<key>device_type</key>
+  				<string>ATY,AdderParent</string>
+  				<key>hda-gfx</key>
+  				<string>onboard-1</string>
+  				<key>model</key>
+  				<string>Radeon Pro W5700X</string>
+  				<key>name</key>
+  				<string>ATY_GPU</string>
+  			</dict>
+  		</dict>
+  	</dict>
+  ```
+
+  Although it's not necessary to spoof since Monterey 12.3.1 update, **BenQ EW3270U Refresh rate** keeps reverting to ```Variable (40-60 Hertz)``` without spoofing. 
 
 - Bluetooth: IOGEAR Bluetooth Dongle
 
