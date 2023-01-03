@@ -6,7 +6,7 @@ Tested working version: macOS Ventura 13.1
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.7**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.8**
 
 ## Working
 
