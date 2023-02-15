@@ -2,11 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Ventura 13.1
+Tested working version: macOS Ventura 13.2
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.8**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.8.9**
 
 ## Working
 
@@ -153,9 +153,7 @@ Tested working version: macOS Ventura 13.1
   	</dict>
   ```
 
-  Although it's not necessary to spoof since Monterey 12.3.1 update, **BenQ EW3270U Refresh rate** keeps reverting to ```Variable (40-60 Hertz)``` without spoofing. 
-
-- Bluetooth: IOGEAR Bluetooth Dongle
+  Bluetooth: IOGEAR Bluetooth Dongle
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
   - Load 3 kexts in config.plist in the following order: BcrmFirmwareData should be first, BcrmPatchRAM3 second and finally BlueToolFixup third.
