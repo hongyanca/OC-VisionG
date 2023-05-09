@@ -2,11 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Ventura 13.2.1
+Tested working version: macOS Ventura 13.3.1(a)
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.0**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.2**
 
 ## Working
 
@@ -41,9 +41,9 @@ Tested working version: macOS Ventura 13.2.1
 - **Ethernet**: Intel I225-V <br>
   Flash a custom firmware: <br>https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md <br>Conditions for Intel I225-V and 3rd party WiFi/LAN cards to work: <br>https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225_stock_vs_cstmfw.md <br>
   
-  | macOS        | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
-  | ------------ | ------ | --------------- | ---------- | ----------------------- | --------------------------- |
-  | 11.4 to 13.0 | **ON** | **OFF**         | **YES**    | **NO / NO**             | **YES / YES**               |
+  | macOS          | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
+  | -------------- | ------ | --------------- | ---------- | ----------------------- | --------------------------- |
+  | 11.4 to 13.3.1 | **ON** | **OFF**         | **YES**    | **NO / NO**             | **YES / YES**               |
   
 - **Graphics**: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
 
