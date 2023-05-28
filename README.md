@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Ventura 13.3.1(a)
+Tested working version: macOS Ventura 13.4
 
 ## Bootloader
 
@@ -29,21 +29,13 @@ Tested working version: macOS Ventura 13.3.1(a)
 
     Reboot the PC.
     
-    ```
-    ACPI->Add->0 DMAR.aml Enabled: YES
-    ACPI->Delete->0 Drop OEM DMAR Table: NO
-    DeviceProperties->Add->PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)->device-id F6100000
-    Kernel->Quirks->DisableIoMapper: NO
-    ```
-    
-    ~~Install [dortania/OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Ethernet)~~
-
+  
 - **Ethernet**: Intel I225-V <br>
   Flash a custom firmware: <br>https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md <br>Conditions for Intel I225-V and 3rd party WiFi/LAN cards to work: <br>https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225_stock_vs_cstmfw.md <br>
   
-  | macOS          | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
-  | -------------- | ------ | --------------- | ---------- | ----------------------- | --------------------------- |
-  | 11.4 to 13.3.1 | **ON** | **OFF**         | **YES**    | **NO / NO**             | **YES / YES**               |
+  | macOS         | Vt-D   | DisableIoMapper | DMAR (OEM) | DMAR (dropped/replaced) | I225-V / 3rd party LAN/WiFi |
+  | ------------- | ------ | --------------- | ---------- | ----------------------- | --------------------------- |
+  | 11.4 to 13.3+ | **ON** | **OFF**         | **YES**    | **NO / NO**             | **YES / YES**               |
   
 - **Graphics**: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
 
@@ -177,7 +169,7 @@ Tested working version: macOS Ventura 13.3.1(a)
 
   - VT-x
 
-  - VT-d (**DisableIoMapper** OFF in config.plist Kernel/Quirks)
+  - VT-d (**DisableIoMapper** OFF/NO/FALSE in config.plist Kernel/Quirks)
 
   - Above 4G Decoding
 
