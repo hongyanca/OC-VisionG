@@ -6,7 +6,7 @@ Tested working version: macOS Ventura 13.4
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.2**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.3**
 
 ## Working
 
@@ -149,6 +149,19 @@ Tested working version: macOS Ventura 13.4
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
   - Load 3 kexts in config.plist in the following order: BcrmFirmwareData should be first, BcrmPatchRAM3 second and finally BlueToolFixup third.
+  - Add the following to NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 above boot-args to set ```bluetoothExternalDongleFailed``` to 00 and ```bluetoothInternalControllerInfo``` to 14 bytes of 0
+    ```
+            <key>bluetoothExternalDongleFailed</key>
+            <data>
+            AA==
+            </data>
+            <key>bluetoothInternalControllerInfo</key>
+            <data>
+            AAAAAAAAAAAAAAAAAAA=
+            </data>
+    ```
+
+    
 
 - Native NVRAM
 
