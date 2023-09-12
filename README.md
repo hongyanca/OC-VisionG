@@ -2,11 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Ventura 13.5
+Tested working version: macOS Ventura 13.5.2
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.4**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.5**
 
 ## Working
 
