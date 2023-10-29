@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Ventura 13.5.2
+Tested working version: macOS Sonoma 14.1
 
 ## Bootloader
 
@@ -157,12 +157,17 @@ Tested working version: macOS Ventura 13.5.2
   	</dict>
   ```
 
-  Bluetooth: IOGEAR Bluetooth Dongle
+  
+
+
+- Bluetooth: IOGEAR Bluetooth Dongle
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
+
   - Load 3 kexts in config.plist in the following order: BcrmFirmwareData should be first, BcrmPatchRAM3 second and finally BlueToolFixup third.
+
   - Add the following to NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 above boot-args to set ```bluetoothExternalDongleFailed``` to 00 and ```bluetoothInternalControllerInfo``` to 14 bytes of 0
-    ```
+    ```yaml
             <key>bluetoothExternalDongleFailed</key>
             <data>
             AA==
@@ -173,7 +178,7 @@ Tested working version: macOS Ventura 13.5.2
             </data>
     ```
 
-    
+- OTA: Add `revpatch=sbvmm` to `boot-args`  to force VMM SB model, allowing OTA updates for unsupported models on macOS 11.3 or newer.
 
 - Native NVRAM
 
@@ -223,3 +228,4 @@ Tested working version: macOS Ventura 13.5.2
 - https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-79#post-2313032: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
 - https://github.com/osx86-ijb/amdradeonrx5700xt-macos-fix-spoof: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DevicePropertie
 - https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore: I225-V Fix
+- https://github.com/acidanthera/RestrictEvents
