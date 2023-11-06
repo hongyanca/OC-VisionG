@@ -6,7 +6,7 @@ Tested working version: macOS Sonoma 14.1
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.5**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.6**
 
 ## Working
 
