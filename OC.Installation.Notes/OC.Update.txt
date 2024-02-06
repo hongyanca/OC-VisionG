@@ -2,18 +2,25 @@ OpenCore Update:
 
 Replace the following files:
 /EFI/BOOT/BOOTx64.efi
+
 /EFI/OC/OpenCore.efi
+
+/EFI/OC/Drivers/FirmwareSettingsEntry.efi
 /EFI/OC/Drivers/OpenCanopy.efi
 /EFI/OC/Drivers/OpenRuntime.efi
 /EFI/OC/Drivers/OpenVariableRuntimeDxe.efi
-/EFI/OC/Drivers/ToggleSipEntry.efi
 /EFI/OC/Drivers/ResetNvramEntry.efi
+/EFI/OC/Drivers/ToggleSipEntry.efi
+
 /EFI/OC/Resources/*
+
 /EFI/OC/Tools/CleanNvram.efi
 /EFI/OC/Tools/OpenShell.efi
 /EFI/OC/Tools/ControlMsrE2.efi
+
 /EFI/OC/Kexts/AppleALC.kext
 /EFI/OC/Kexts/Lilu.kext
+/EFI/OC/Kexts/RestrictEvents.kext
 /EFI/OC/Kexts/SMCProcessor.kext
 /EFI/OC/Kexts/SMCSuperIO.kext
 /EFI/OC/Kexts/VirtualSMC.kext
