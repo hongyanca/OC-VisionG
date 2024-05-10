@@ -2,11 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sonoma 14.3.1
+Tested working version: macOS Sonoma 14.4.1
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.9**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.0**
 
 ## Working
 
