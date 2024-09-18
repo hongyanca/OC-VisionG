@@ -171,11 +171,15 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
   
 
 
-- Bluetooth: IOGEAR Bluetooth Dongle
+- **Bluetooth**: IOGEAR Bluetooth Dongle
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
 
   - Load 3 kexts in config.plist in the following order: BcrmFirmwareData should be first, BcrmPatchRAM3 second and finally BlueToolFixup third.
+
+  - macOS Sequoia: https://www.tonymacx86.com/threads/sequoia-usb-bluetooth.330275/
+    Add `-revbeta -lilubetaall -wegbeta -vsmcbeta` to NVRAM -> Add -> boot-args
+    ![image-20240917232139853](./README.assets/image-20240917232139853.png)
 
   - Add the following to NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 above boot-args to set ```bluetoothExternalDongleFailed``` to 00 and ```bluetoothInternalControllerInfo``` to 14 bytes of 0
     ```yaml

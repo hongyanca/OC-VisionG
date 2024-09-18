@@ -1323,7 +1323,7 @@
 				AAAAAAAAAAAAAAAAAAA=
 				</data>
 				<key>boot-args</key>
-				<string>shikigva=80 agdpmod=pikera revpatch=sbvmm</string>
+				<string>shikigva=80 agdpmod=pikera revpatch=sbvmm -revbeta -lilubetaall -wegbeta -vsmcbeta</string>
 				<key>csr-active-config</key>
 				<data>
 				5wMAAA==
