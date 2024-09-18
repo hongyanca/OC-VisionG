@@ -2,7 +2,18 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sonoma 14.6
+Tested working version: macOS Sequoia 15.0
+
+## Updating to Sequoia
+
+https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequoia/
+
+> As Apple now polls for more T2-specific information from its Macs, you can't update to Sequoia without either of these fixes:
+>
+> - Use iMac19,1 SMBIOS to update, then revert to your old SMBIOS if needed
+> - Download the latest release of **RestrictEvents.kext, and use it with the boot argument revpatch=sbvmm**.
+>
+> Note: You may encounter issues with the update not installing if you have BluetoolFixup.kext. Disable it while you are updating and re-enable it afterwards.
 
 ## Bootloader
 
