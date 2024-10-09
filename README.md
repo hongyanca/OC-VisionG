@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sequoia 15.0
+Tested working version: macOS Sequoia 15.0.1
 
 ## Updating to Sequoia
 
@@ -17,7 +17,7 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.1**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.2**
 
 ## Working
 
