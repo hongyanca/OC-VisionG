@@ -182,6 +182,7 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
     ![image-20240917232139853](./README.assets/image-20240917232139853.png)
 
   - Add the following to NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 above boot-args to set ```bluetoothExternalDongleFailed``` to 00 and ```bluetoothInternalControllerInfo``` to 14 bytes of 0
+    
     ```yaml
             <key>bluetoothExternalDongleFailed</key>
             <data>
@@ -192,6 +193,9 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
             AAAAAAAAAAAAAAAAAAA=
             </data>
     ```
+    
+  - Use Hackintool to verify that `bluetoothExternalDongleFailed` is <00>
+    ![hackintool-verify-bt](./README.assets/hackintool-verify-bt.jpeg)
 
 - OTA: Add `revpatch=sbvmm` to `boot-args`  to force VMM SB model, allowing OTA updates for unsupported models on macOS 11.3 or newer.
 
