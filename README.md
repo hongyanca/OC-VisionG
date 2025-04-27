@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sequoia 15.3.1
+Tested working version: macOS Sequoia 15.4.1
 
 ## Updating to Sequoia
 
@@ -179,9 +179,9 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 
   - macOS Sequoia: https://www.tonymacx86.com/threads/sequoia-usb-bluetooth.330275/
     Add `-revbeta -lilubetaall -wegbeta -vsmcbeta` to NVRAM -> Add -> boot-args
-    ![image-20240917232139853](./README.assets/image-20240917232139853.png)
+    ![bluetooth-keys](./README.assets/bluetooth-keys.jpeg)
 
-  - Add the following to NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 above boot-args to set ```bluetoothExternalDongleFailed``` to 00 and ```bluetoothInternalControllerInfo``` to 14 bytes of 0
+  - Add the following to NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 above boot-args to set ```bluetoothExternalDongleFailed``` to 00 and ```bluetoothInternalControllerInfo``` to 14 bytes of 0. Add these two entries to NVRAM -> Delete -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 as `String`.
     
     ```yaml
             <key>bluetoothExternalDongleFailed</key>
@@ -194,7 +194,7 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
             </data>
     ```
     
-  - Use Hackintool to verify that `bluetoothExternalDongleFailed` is <00>
+  - Use Hackintool to verify that `bluetoothExternalDongleFailed` is <00>. If the value is not <00>, delete `bluetoothExternalDongleFailed` and `bluetoothInternalControllerInfo` entries and reboot.
     ![hackintool-verify-bt](./README.assets/hackintool-verify-bt.jpeg)
 
 - OTA: Add `revpatch=sbvmm` to `boot-args`  to force VMM SB model, allowing OTA updates for unsupported models on macOS 11.3 or newer.
