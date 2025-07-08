@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sequoia 15.4.1
+Tested working version: macOS Sequoia 15.5
 
 ## Updating to Sequoia
 
@@ -17,7 +17,7 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.4**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.5**
 
 ## Working
 
@@ -240,7 +240,6 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 - https://github.com/acidanthera/BrcmPatchRAM: Bluetooth
 - https://www.reddit.com/r/hackintosh/comments/qgshzj/bluetooth_on_macos_monterey_1201/: IOGEAR Bluetooth dongle
 - https://dortania.github.io/OpenCore-Install-Guide/ktext.html#ethernet: Vendor Id of Intel 82574L
-- https://github.com/BrushXue/EP2C602-4LD16-E5-2667v2-Hackintosh: Intel 82574L Ethernet Adapter
 - https://www.tonymacx86.com/threads/guide-asrock-rack-ep2c602.289060/: Intel 82574 Ethernet Adapter
 - https://www.tonymacx86.com/threads/guide-replace-non-working-intel-i225-with-82574l-pcie-nic-monterey-opencore.319056/: Replace non-working Intel I225 with 82574L PCIe NIC (Monterey + OpenCore)
 - https://www.tonymacx86.com/threads/solved-intel-82574l-nic-make-it-work-again.322802/: Intel 82574L PCIe NIC on Ventura
