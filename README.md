@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sequoia 15.5
+Tested working version: macOS Sequoia 15.7.1
 
 ## Updating to Sequoia
 
@@ -17,7 +17,7 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 
 ## Bootloader
 
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.5**
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.6**
 
 ## Working
 
@@ -175,7 +175,7 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 
   - Download latest BrcmPatchRAM from https://github.com/acidanthera/BrcmPatchRAM
 
-  - Load 3 kexts in config.plist in the following order: BcrmFirmwareData should be first, BcrmPatchRAM3 second and finally BlueToolFixup third.
+  - Load 3 kexts in `config.plist` in the following order: `BcrmFirmwareData` should be first, `BcrmPatchRAM3` second and finally `BlueToolFixup` third.
 
   - macOS Sequoia: https://www.tonymacx86.com/threads/sequoia-usb-bluetooth.330275/
     Add `-revbeta -lilubetaall -wegbeta -vsmcbeta` to NVRAM -> Add -> boot-args
@@ -244,6 +244,6 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 - https://www.tonymacx86.com/threads/guide-replace-non-working-intel-i225-with-82574l-pcie-nic-monterey-opencore.319056/: Replace non-working Intel I225 with 82574L PCIe NIC (Monterey + OpenCore)
 - https://www.tonymacx86.com/threads/solved-intel-82574l-nic-make-it-work-again.322802/: Intel 82574L PCIe NIC on Ventura
 - https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-79#post-2313032: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
-- https://github.com/osx86-ijb/amdradeonrx5700xt-macos-fix-spoof: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DevicePropertie
+- https://github.com/osx86-ijb/amd-radeon-rx-5700xt-macos-123-spoof-fix-workaround: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DevicePropertie
 - https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore: I225-V Fix
 - https://github.com/acidanthera/RestrictEvents
