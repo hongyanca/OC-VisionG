@@ -2,7 +2,7 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Sequoia 15.7.1
+Tested working version: macOS Tahoe 26.2
 
 ## Updating to Sequoia
 
@@ -14,6 +14,10 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 > - Download the latest release of **RestrictEvents.kext, and use it with the boot argument revpatch=sbvmm**.
 >
 > Note: You may encounter issues with the update not installing if you have BluetoolFixup.kext. Disable it while you are updating and re-enable it afterwards.
+
+## Updating to Tahoe
+
+Disable [WhateverGreen](https://github.com/acidanthera/WhateverGreen) before fresh installation or OTA.
 
 ## Bootloader
 
