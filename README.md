@@ -2,7 +2,11 @@
 
 Fork from https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh
 
-Tested working version: macOS Tahoe 26.2
+Tested working version: macOS Tahoe 26.3.1(a)
+
+## Bootloader
+
+**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.7**
 
 ## Updating to Sequoia
 
@@ -17,11 +21,11 @@ https://www.reddit.com/r/hackintosh/comments/1dd2tlq/a_welcome_to_macos_15_sequo
 
 ## Updating to Tahoe
 
-Disable [WhateverGreen](https://github.com/acidanthera/WhateverGreen) before fresh installation or OTA.
+https://www.tonymacx86.com/threads/success-with-whatevergreen-kext-1-7-1d7-and-ota-update-clean-install-recovery-mode-of-tahoe.332725/
 
-## Bootloader
-
-**[OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.6**
+> The officially distributed [Whatevergreen.kext](https://github.com/acidanthera/WhateverGreen) 1.7.1 usually must be disabled for OTA Update, Clean Install and Recovery Mode of Tahoe.
+>
+> Recently, **laobamyc_yyds** developed a forked version of WhatEvergreen.kext 1.7.1, i.e. **Whatevergreen.kext 1.7.1d7** (attached below), which works well with OTA Update, Clean Install and Recovery Mode of Tahoe. Whatevergreen.kext 1.7.1d7 also works with any other macOS version.
 
 ## Working
 
@@ -251,3 +255,4 @@ Disable [WhateverGreen](https://github.com/acidanthera/WhateverGreen) before fre
 - https://github.com/osx86-ijb/amd-radeon-rx-5700xt-macos-123-spoof-fix-workaround: Spoof the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DevicePropertie
 - https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore: I225-V Fix
 - https://github.com/acidanthera/RestrictEvents
+- https://www.tonymacx86.com/threads/success-with-whatevergreen-kext-1-7-1d7-and-ota-update-clean-install-recovery-mode-of-tahoe.332725/
